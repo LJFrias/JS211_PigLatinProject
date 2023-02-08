@@ -13,9 +13,47 @@ const rl = readline.createInterface({
 
 const pigLatin = (word) => {
 
-  // Your code here
+  
+
+  // var that is trimmed and lowercase
+  word = word.trim().toLowerCase()
+  // 1. if word begins with a vowel adds "yay"
+  // 2. if word begins with a consonant splices off beginning, returns word with new ending.
+  // 3. if word begins with two consonant splices off beginning, returns word with new ending.
+  // 4. if multiple words, create array of words, loop over them, and creates a new array with the new words.  
+  
+  // array of vowels to compare to the word
+  let vowels = ['a', 'e', 'i', 'o', 'u']
+
+  for(let letter = 0; letter < word.length; letter++){
+    // loop through the letters in the word and find the first vowel
+    // does the first letter show up in the vowels array?
+
+    if (vowels.includes(word[0])) {
+
+      return word + "yay"
+    }
+    else if (vowels.includes(word[1])) {
+      
+      let newWord = word.slice(1) + word.slice(0,1) + "ay"
+      return newWord
+
+    }
+    else  {
+
+      let compWord = word.slice(2) + word.slice(0,2) + "ay"
+      return compWord
+
+    }
+
+  }
 
 }
+ 
+
+
+
+
 
 // the first function called in the program to get an input from the user
 // to run the function use the command: node main.js
