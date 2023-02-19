@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin: 19%; */
+    background-color: pink;
+    font-family: 'Mynerve', cursive;
+}
+
+#display-element {
+    margin: 100px 0;
+    font-size: 50px;
+    border: solid 7px black;
+    padding: 10px;
+    color: white;
+}
+
+h1 {
+    font-size: 75px;
+    text-decoration: underline;
+}
+
+.oinker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 50px;
+    color: white;
+}
+
+button {
+    height: 50px;
+    width: 75px;
+    margin: 50px;
+    background-color: black;
+    color: pink;
+    font-size: 120%;
+}
+
